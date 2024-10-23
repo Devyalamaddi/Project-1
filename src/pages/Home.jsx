@@ -14,11 +14,11 @@ function Home() {
       <div className="container">
 
 
-        <div className="row gap-5 p-3 align-items-center justify-content-center">
+        <div className="row  p-2 align-items-center justify-content-center">
 
           <div className="col-5">
             {/* image-1 */}
-            <img  src={welcomeImg} width={"500px"} alt="" />
+            <img  src={welcomeImg} width={"450px"} alt="" />
           </div>
 
           <div className="col-5">

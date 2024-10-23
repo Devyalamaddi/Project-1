@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`d-flex flex-column bg-dark rounded-e-xl text-white p-3 ${isCollapsed ? 'sidebar-collapsed' : 'sidebar-expanded'}`} style={{minHeight:'100vh'}}>
+    <div className={`d-flex flex-column bg-dark rounded-e-xl text-white p-2.5 ${isCollapsed ? 'sidebar-collapsed' : 'sidebar-expanded'}`} style={{minHeight:'100vh'}}>
       <button className="btn btn-secondary text-center" onClick={toggleSidebar}>
         <FaBars />
       </button>
@@ -26,11 +26,11 @@ const Sidebar = () => {
         </Link>
         <Link to="/signin" className={` d-flex align-items-center gap-2 mb-3 hover:cursor-pointer hover:text-orange-400   ${isCollapsed ? 'justify-content-center':''}`}>
           <FaSignInAlt title={isCollapsed ? 'Sign In' : ''} />
-          {!isCollapsed && <span className="ms-2">Sign In</span>}
+          {!isCollapsed && <span className="ms-2">SignIn</span>}
         </Link>
         <Link to="/signup" className={` d-flex align-items-center gap-2 mb-3 hover:cursor-pointer hover:text-orange-400   ${isCollapsed ? 'justify-content-center':''}`}>
           <FaUserPlus title={isCollapsed ? 'Sign Out' : ''} />
-          {!isCollapsed && <span className="ms-2">Sign Up</span>}
+          {!isCollapsed && <span className="ms-2">SignUp</span>}
         </Link>
       </ul>
     </div>
